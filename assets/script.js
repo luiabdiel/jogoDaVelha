@@ -276,12 +276,13 @@ function declareWinner(winner) {
   }
 }
 
+// LÓGICA IA
 function computerPlay() {
   let cloneO = o.cloneNode(true);
   counter = 0;
   filled = 0;
 
-  for (let i = 0; u < boxes.length; i++) {
+  for (let i = 0; i < boxes.length; i++) {
     let randomNumber = Math.floor(Math.random() * 5);
 
     // SÓ PREENCHER QUANDO VAZIO
